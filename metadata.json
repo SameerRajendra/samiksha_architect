@@ -1,0 +1,5 @@
+{
+  "name": "Architect's Vision",
+  "description": "A creative and modern portfolio website for an architect to showcase their projects. It features a sleek dark-mode design, smooth animations, and an AI-powered project description generator using the Gemini API.",
+  "requestFramePermissions": []
+}
