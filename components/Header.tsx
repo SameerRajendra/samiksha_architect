@@ -47,9 +47,14 @@ export const Header: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/70 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" onClick={(e) => handleLinkClick(e, '#hero')} className="text-2xl font-bold font-serif tracking-wider text-white hover:text-amber-400 transition-colors">
-          AV
+       <a href="#" onClick={(e) => handleLinkClick(e, '#hero')}>
+        <img
+          src="/logo.svg"
+          alt="Architect Logo"
+          className="w-12 h-12 hover:opacity-80 transition-opacity"
+          />
         </a>
+
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} onClick={(e) => handleLinkClick(e, link.href)} className="text-gray-300 hover:text-amber-400 transition-colors duration-300 relative group">
